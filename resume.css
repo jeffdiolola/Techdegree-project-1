@@ -1,0 +1,18 @@
+
+body {
+  font-family: 'Walter Turncoat', cursive;
+  }
+
+.main-image {
+    border: solid 5px #e2e2e2;
+    border-radius: 0%;
+    }
+
+h1 {
+   background-color: #e2e2e2;
+   padding: 5px;
+}
+
+.section-title {
+      text-transform: uppercase;
+}
