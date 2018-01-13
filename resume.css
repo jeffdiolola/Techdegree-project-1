@@ -11,8 +11,20 @@ body {
 h1 {
    background-color: #e2e2e2;
    padding: 5px;
+   color: #00b3b3;
 }
+
 
 .section-title {
       text-transform: uppercase;
+}
+a {
+  text-decoration-style: dotted;
+  color: #00b3b3;
+}
+a:hover {
+  color: #ff99ff;
+}
+main-nav {
+
 }

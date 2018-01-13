@@ -11,6 +11,25 @@ body {
   color: #222;
   background: #e0e0eb;
 }
+
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
 /* Link Styles */
 
 a {
@@ -26,8 +45,8 @@ a:hover {
 .main-nav {
   width: 100%;
   background: black;
-  min-height: 30px;
-  padding: 10px;
+  min-height: 10px;
+  padding: 0px;
   position: fixed;
   text-align: center;
 }
@@ -43,7 +62,7 @@ a:hover {
   display: none;
 }
 .nav li {
-  padding: 5px 10px 10px 10px;
+  padding: 2px 10px 2px 10px;
 }
 .nav a {
   transition: all .5s;
@@ -54,65 +73,43 @@ a:hover {
 
 header {
   text-align: center;
-  background: url("images/giphy.gif") no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 100px;
 }
 header {
-  line-height: 1;
+  line-height: 1.5;
 }
-header .profile-image {
-  margin-top: 50px;
-  width: 100px;
-  height: 80px;
-  border-radius: 10%;
-  border: 3px solid white;
-  transition: all .5s;
-}
-header .profile-image:hover {
-  transform: scale(4) rotate(720deg);
-}
-.tag {
-  color: black;
+.container {
+  position: relative;
+  text-align: center;
+  }
+
+.tagname {
+  background-color:;
+  color: white;
   padding: 5px;
   border-radius: 10px;
   display: table;
   margin: 10px auto;
+  font-size: 400%;
 }
-.location {
-  background-color: #222;
+.tag-services {
+  background-color: #;
   color: white;
+  padding: 5px;
+  border-radius: 10px;
+  display: table;
+  margin: 10px auto;
+  font-size: 300%;
 }
-.card {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
-  background: #AFBBBB;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-}
-.card:hover {
-  border-color: #00b3b3;
-}
-
-ul.skills {
-  padding: 0;
-  text-align: center;
-}
-
-.skills li {
-  border-radius: 6px;
-  display: inline-block;
-  background: #ff9904;
-  color: white;
-  padding: 5px 10px;
-  margin: 2px;
-}
-
-.skills li:nth-child(odd) {
-  background: #0399ff;
+footer {
+   position:fixed;
+   left:0px;
+   right: 0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
 }
 
 footer {
@@ -122,6 +119,7 @@ footer {
 }
 
 footer .copyright {
+  color: white;
   top: -8px;
   margin-right: 20px;
   font-size: .75em;
@@ -161,6 +159,9 @@ a.social:hover {
   clear: both;
 }
 
+
+
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {}
 
@@ -198,11 +199,3 @@ a.social:hover {
     max-width: 1200px;
     margin: 40px auto;
   }
-
-.card-title {
-text-align: center;
-border: solid black 3px;
-border-radius: 10px;
-margin-top: 50px;
-letter-spacing: 4px;
-}
